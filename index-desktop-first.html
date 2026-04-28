@@ -22,7 +22,7 @@
           font-weight: bold;
       }
       .article-container{
-          width: 70%;
+          width: 70%; 
           margin: 0 auto;
       }
       .article-header{
@@ -40,9 +40,13 @@
       .article-header__body{
           width: 100%;
       }
-      .article-header__description{
-          width: 50%;
+
+      /* 1. สั่งให้กว้าง 50% สำหรับจอคอม */
+      .article-header__description{  
+          width: 50%; 
       }
+
+
       .article-header__tags > span{
         background: white;
         color: black;
@@ -55,15 +59,17 @@
       .article-body{
           margin: 50px 0;
       }
-      @media (max-width:600px){
+
+      /*2. เขียน Media Query เพื่อ "แก้กลับ" เป็น 100% สำหรับมือถือ */
+      @media (max-width:600px){   /*เมื่อหน้าจอเล็กลงกว่า 600px*/
         h1{
-            font-size: 32px;
+            font-size: 32px; /* แก้ให้เล็กลง */
         }
         .article-container{
-            width: 90%;
+            width: 90%; /* แก้ให้กว้างขึ้น */
         }
         .article-header__description{
-            width: 100%;
+            width: 100%; /* แก้ให้เต็มจอ */
         }
       }
   </style>
